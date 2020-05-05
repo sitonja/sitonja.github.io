@@ -7,6 +7,9 @@ export const ScanQr = () => {
 
     const handleScan = (data) => {
         console.log(data)
+        if (!result) {
+            setResult(data)
+        }
     }
 
     const handleError = (err) => {
@@ -19,5 +22,6 @@ export const ScanQr = () => {
             onError={handleError}
             onScan={handleScan}
         />
+        <h1>{result}</h1>
     </Fragment>)
 }
