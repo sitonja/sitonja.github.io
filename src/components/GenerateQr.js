@@ -4,6 +4,6 @@ var QRCode = require('qrcode.react');
 export const GenerateQr = () => {
     return (<Fragment>
         <h1>Generate Qr</h1>
-        <QRCode size="256" value="http://facebook.github.io/react/" />
+        <QRCode size="512" value="Diese app ist Geil!" />
     </Fragment>)
 }
